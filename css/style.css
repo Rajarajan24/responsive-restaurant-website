@@ -59,6 +59,7 @@ header h2 i,nav a i{
     color:rgb(200, 244, 3);
     font-size:2.5em;
     font-weight: bolder;
+    min-width: 620px;
 }
 .tagline2{
     color: rgba(239, 241, 236, 0.96);
@@ -121,4 +122,82 @@ table {
 
 .maincourse{
     grid-row:span 2;
+}
+
+
+.locations{
+    background:linear-gradient(to right,rgb(247, 5, 5),rgb(53, 52, 52));
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color:lawngreen;
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 160px;
+    
+}
+
+footer{
+    background-color: rgb(55, 55, 55);
+    color:whitesmoke;
+    padding:.25em 1em;
+}
+
+#copyright{
+    margin-left:20px;
+}
+
+.social-menu ul{
+    display: flex;
+    padding:0;
+}
+
+.social-menu ul li{
+    list-style: none;
+    display:inline-block;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 35px;
+    line-height: 40px;
+    transition: .3s;
+    color: #efecec;
+}
+
+.social-menu ul li .fab:hover{
+    color: white;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #101010;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(9, 9, 9, 0.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -30%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #00ACEE;
 }
