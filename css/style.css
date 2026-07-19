@@ -77,3 +77,48 @@ header h2 i,nav a i{
     color: white;
     border: 1px solid green;
 }
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(247, 5, 5),rgb(53, 52, 52));
+    color: azure;
+}
+
+#menuheading ,#locheading{
+    background: linear-gradient(to right,rgb(247, 5, 5),rgb(53, 52, 52));
+    font-size: 2.5em;
+    color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: lightgreen;
+    font-size: 1.8em;
+}
+
+table {
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display:flex;
+    justify-content: center;
+    margin-top:.8em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row:span 2;
+}
